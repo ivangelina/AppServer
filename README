@@ -1,0 +1,23 @@
+mutation {
+   addBuilding(buildingname: "апартамент 18", title: "house", area: "145", price: "160000", description: "жилище с южно изложение", location: "гр.Пловдив, ул.Луна №101"){
+			_id,
+			buildingname,
+			title,
+			area,
+			price,
+			description,
+			location
+		}
+  }
+
+  query {
+      buildings {
+		  _id
+		  buildingsname,
+          title,
+		  area,
+		  price,
+		  description,
+		  location
+	  }
+  }
